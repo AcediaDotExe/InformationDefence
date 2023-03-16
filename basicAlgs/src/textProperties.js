@@ -31,6 +31,5 @@ function main() {
   // const filePath = "../template.doc";
   // console.log(`File size: ${getFileInfo(filePath).size} bytes`);
   // readBytes(filePath);
-
 }
 main();
