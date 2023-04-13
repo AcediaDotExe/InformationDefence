@@ -59,7 +59,6 @@ export default (function () {
       right = XOR(feistelFunction(left), right);
       [left, right] = swap(left, right);
     }
-    [left, right] = swap(left, right);
     left = XOR(left, secretKey[17]);
     right = XOR(right, secretKey[16]);
     return {
@@ -79,7 +78,6 @@ export default (function () {
       left = XOR(left, secretKey[i]);
       [left, right] = swap(left, right);
     }
-    [left, right] = swap(left, right);
     return {
       left,
       right,
